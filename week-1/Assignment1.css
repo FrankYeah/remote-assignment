@@ -1,0 +1,151 @@
+/* base element styles */
+
+*{
+        box-sizing: border-box;
+}
+
+body{
+        line-height: 1.6;
+        overflow-y: scroll;
+        overflow-x: hidden;       
+}
+
+/* navigation */
+
+.main-nav{
+        float:right;
+        margin-right:4%;
+        margin-top:1.4%;
+}
+
+.main-nav li{
+        float:left;
+        margin-left:22px;
+}
+
+.name{
+        float:left;
+              
+}
+
+.img-menu{
+        width:50px;
+        height:50px;
+        float:right;
+        margin-right:100px;
+        margin-top:1%;
+        display:none;
+}
+
+/* 處理float的collapse問題 */
+.clearfix::after{
+        content:"";
+        display:table;
+        clear:both;
+}
+
+.middle-wellcome{
+        text-align: center;
+        background-color: #CCEEFF;
+        margin:0;
+        padding:5em;       
+}
+
+.section-title{
+        text-align: center;
+        padding:2em;
+}
+
+.content-div{
+        max-width: 1200px;
+}
+
+.button-bottom{
+        text-align: center;
+        margin-top:2em;
+        margin-bottom:0.5em;     
+}
+
+.button-img{
+        background-color: #CCEEFF;
+        border:none;
+        text-align: center;
+}
+
+/* layout container  */
+
+.container{       
+        padding-bottom:1em;
+}
+
+
+.main-header {
+        background-color: #ddd ;
+        padding:.3em 0;
+              
+}
+
+.main-footer{
+        text-align: center;
+}
+
+.content{
+        float:left;
+        width:48%;
+        margin-bottom:1em;
+        margin-left:1em;
+        text-align: center;
+        background:#888;
+        padding-bottom:6em;     
+}
+
+/* Media Queries */
+
+@media (min-width:1200px)  {
+        .content-div{
+                margin:0 auto;                
+        }        
+
+}
+
+@media ( max-width:1200px ){
+
+        .container {
+                width:90%;
+                margin: 0 auto;
+        }
+
+        .main-nav{
+                float:right;
+                margin-right:0.1%;
+                margin-top:2.4%;
+        }
+}
+
+@media ( max-width:800px ){
+
+        .content{
+                width:45%;
+                margin-left:1em;
+        }
+        .main-nav {
+                display: none;
+        }
+
+        .img-menu{
+                display:block;
+                margin-right:1%;
+        }
+}       
+
+        
+
+@media ( max-width:500px ){
+
+        .content{
+                width:90%;
+                margin-left:1.3em;
+                margin-right:7em;
+        }
+
+}
