@@ -1,7 +1,10 @@
-var args = new Object();
-args.op = '-';
-args.n1 = 5;
-args.n2 = 4;
+function createObj(op, n1, n2){
+    this.op = op;
+    this.n1 = n1;
+    this.n2 = n2;
+}
+
+var args = new createObj('-', 9, 2);
 
 function calculate(args){
 	let result;
