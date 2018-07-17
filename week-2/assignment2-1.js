@@ -11,4 +11,3 @@ function calculate(args){
 }
 
 calculate({op:'+', n1:5, n2:4})
-

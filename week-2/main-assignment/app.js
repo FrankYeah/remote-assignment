@@ -22,5 +22,5 @@ welcomeMessage.addEventListener('click', () => {
 myButton.addEventListener('click', () => {
     contentDiv.style.display ='block';
     contentDiv.style.maxWidth = "1200px";
-    
+    contentDiv.style.transition ='transition: background 0.5s ease-in,color 0.3s ease-out';
 });

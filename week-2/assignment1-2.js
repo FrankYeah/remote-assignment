@@ -1,7 +1,6 @@
 function max(...numbers){
-	var sortedArgs = numbers.sort().reverse();
+  var sortedArgs = numbers.sort().reverse();
   return sortedArgs[0];
-
 
 }
 max(1, 2, 4, 5); // result to 5

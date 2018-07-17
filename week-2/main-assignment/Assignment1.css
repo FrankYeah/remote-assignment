@@ -57,6 +57,8 @@ body{
         font-size: 20px        
 }
 
+
+
 /* 處理float的collapse問題 */
 .clearfix::after{
         content:"";
@@ -96,6 +98,8 @@ body{
         border:none;
         text-align: center;
 }
+
+
 
 /* layout container  */
 
